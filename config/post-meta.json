@@ -1,0 +1,8 @@
+{
+  "zephr_feature": {
+    "post_types": [
+      "page",
+      "post"
+    ]
+  }
+}

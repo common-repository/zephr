@@ -1,0 +1,6 @@
+{
+  "zephr_feature": {
+    "default": "",
+    "type": "string"
+  }
+}

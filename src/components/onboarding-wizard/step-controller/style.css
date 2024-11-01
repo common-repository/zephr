@@ -1,0 +1,124 @@
+.zephr-onboarding-wizard__step-container {
+  background-color: white;
+  margin: 30px auto;
+  max-width: 600px;
+  padding: 20px 30px;
+  width: 100%;
+}
+
+.zephr-onboarding-wizard__step-header {
+  text-align: center;
+}
+
+.zephr-onboarding-wizard__step form .form-error {
+  color: red;
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.zephr-onboarding-wizard__step form input[type="text"],
+.zephr-onboarding-wizard__step form input[type="password"],
+.zephr-onboarding-wizard__step form label {
+  display: block;
+  margin: 0 auto 10px;
+  width: 98%;
+}
+
+.zephr-onboarding-wizard__step form select {
+  width: 50%;
+}
+
+.zephr-onboarding-wizard__step form input[type="text"],
+.zephr-onboarding-wizard__step form input[type="password"],
+.zephr-onboarding-wizard__step form select {
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.zephr-onboarding-wizard__step button.nextbutton {
+  align-items: center;
+  background-color: black;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  font-size: 18px;
+  height: 50px;
+  justify-content: center;
+  margin: 20px auto;
+  position: relative;
+  width: 160px;
+  z-index: 0;
+}
+
+/* stylelint-disable-next-line selector-max-specificity */
+.zephr-onboarding-wizard__step button.nextbutton::before,
+.zephr-onboarding-wizard__step button.nextbutton::before {
+  animation: glowing 20s linear infinite;
+  background-image: linear-gradient(90deg, #a21780 0%, #99131f 22%, #fcbf3c 49%, #007532 80%, #009fe3 90%, #000771 100%);
+  background-size: 400%;
+  border-radius: 10px;
+  content: '';
+  height: calc(100% + 6px);
+  left: -3px;
+  opacity: 0;
+  position: absolute;
+  top: -3px;
+  transition: opacity 0.3s ease-in-out;
+  width: calc(100% + 6px);
+  z-index: -1;
+}
+
+.zephr-onboarding-wizard__step button.nextbutton::after {
+  background-color: black;
+  border-radius: 10px;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+/* stylelint-disable-next-line selector-max-specificity */
+.zephr-onboarding-wizard__step button.nextbutton:hover::before,
+.zephr-onboarding-wizard__step button.nextbutton:focus::before {
+  opacity: 1;
+}
+
+.zephr-onboarding-wizard__step .details {
+  font-size: 14px;
+  margin: 0 auto;
+  max-width: 510px;
+  padding: 20px 0;
+}
+
+.zephr-onboarding-wizard__step .details span {
+  display: inline-block;
+  font-weight: 900;
+  padding-right: 20px;
+  text-align: right;
+  width: 70px;
+}
+
+@keyframes glowing {
+
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.zephr-onboarding-wizard__step.summary h2 {
+  text-align: center;
+}

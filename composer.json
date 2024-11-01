@@ -1,0 +1,26 @@
+{
+  "name": "alleyinteractive/zephr",
+  "description": "Zephr",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Alley Interactive",
+      "email": "noreply@alleyinteractive.com"
+    }
+  ],
+  "require-dev": {
+    "alleyinteractive/alley-coding-standards": "^0.2.0",
+    "phpunit/phpunit": "7.5.*",
+    "yoast/phpunit-polyfills": "^1.0"
+  },
+  "scripts": {
+    "phpcbf": "phpcbf .",
+    "phpcs": "phpcs . --runtime-set text_domain zephr --runtime-set prefixes zephr,_ai,ai_",
+    "phpunit": "phpunit"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}

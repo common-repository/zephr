@@ -1,0 +1,69 @@
+.zephr-onboarding-wizard__header {
+  align-items: center;
+  border-bottom: 1px solid #dcdcdc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.zephr-onboarding-wizard__step-markers {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.zephr-onboarding-wizard__step-marker {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: calc(25% - 80px); /* 25% because 4 steps, then 20px space per step */
+  z-index: 1;
+}
+
+.zephr-onboarding-wizard__separator {
+  align-self: flex-start;
+  border-bottom: 2px dashed #000;
+  flex-grow: 1;
+  margin-top: 15px; /* marker number is 30px tall */
+}
+
+.zephr-onboarding-wizard__step-number {
+  align-items: center;
+  background-color: black;
+  border-radius: 100%;
+  color: white;
+  display: flex;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  height: 30px;
+  justify-content: center;
+  width: 30px;
+  z-index: 1;
+}
+
+/* stylelint-disable-next-line selector-max-specificity */
+.zephr-onboarding-wizard__step-marker.is-current-step .zephr-onboarding-wizard__step-number {
+  background-color: transparent;
+  background-image: url('../../../assets/zephr-logo.svg');
+  background-position: 3px 0;
+  background-repeat: no-repeat;
+  background-size: 95%;
+  border-radius: 0;
+  color: #000;
+  height: 40px;
+  overflow: visible;
+  width: 40px;
+}
+
+.zephr-onboarding-wizard__step-label {
+  font-size: 16px;
+  padding-top: 8px;
+}

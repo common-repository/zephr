@@ -1,0 +1,41 @@
+/**
+ * Styles for the full-screen onboarding wizard.
+ */
+
+.zephr-fullscreen-onboarding #adminmenumain,
+.zephr-fullscreen-onboarding #wpcontent > *,
+.zephr-fullscreen-onboarding .error,
+.zephr-fullscreen-onboarding .notice,
+.zephr-fullscreen-onboarding .update-nag,
+.zephr-fullscreen-onboarding .updated,
+.zephr-fullscreen-onboarding .zephr-settings,
+.zephr-fullscreen-onboarding #wpfooter {
+  display: none;
+}
+
+.zephr-fullscreen-onboarding #wpcontent {
+  margin-left: 0 !important; /* stylelint-disable-line declaration-no-important */
+  padding-left: 0 !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.zephr-fullscreen-onboarding #wpcontent > #wpbody {
+  display: block;
+  margin-top: 0 !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.zephr-fullscreen-onboarding .zephr-onboarding-wizard {
+  display: block;
+}
+
+.zephr-onboarding-wizard {
+  display: none;
+}
+
+.zephr-onboarding-wizard > * {
+  box-sizing: border-box;
+}
+
+.zephr-fullscreen-onboarding button:hover,
+.zephr-fullscreen-onboarding button:focus {
+  cursor: pointer;
+}
